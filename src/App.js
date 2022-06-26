@@ -2,12 +2,15 @@ import {useRef, useState} from 'react';
 import {useEffect} from 'react';
 import './App.css';
 import {signup, useAuth,logOut, login} from "./firebase"
+/*
 import {auth} from './firebase';
 import {BrowserRouter as Router,
   Routes,
   Route,
   Link,
   BrowserRouter} from 'react-router-dom';
+  */
+import Prescription from './components/Prescription';
 
 export default function Signin(){
   const emailRef = useRef();
@@ -51,6 +54,7 @@ export default function Signin(){
 
   return (
 
+    /*
     
     <div id = "main">
      
@@ -67,7 +71,10 @@ export default function Signin(){
 
 
     </div>
-    
+    */
+   <div>
+     <Prescription/>
+   </div>
 
   );
 }
